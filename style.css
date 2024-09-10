@@ -35,6 +35,28 @@ body {
     width: 100%;
 }
 
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    max-height: 50px; 
+    margin-right: 20px; 
+}
+
+nav .logo a {
+    font-weight: 500;
+    font-size: 35px;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+nav.sticky .logo a {
+    color: var(--text-color-light);
+}
+
+
 header, nav {
     position: fixed;
     top: 0;
@@ -47,7 +69,6 @@ header {
     background-color: var(--secondary-color);
     color: var(--secondary-color);
 }
-
 
 nav {
     padding: 20px;
@@ -68,17 +89,6 @@ nav .nav-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-nav .logo a {
-    font-weight: 500;
-    font-size: 35px;
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-
-nav.sticky .logo a {
-    color: var(--text-color-light);
 }
 
 .nav-content .nav-links {
@@ -110,6 +120,7 @@ nav.sticky .nav-links li a {
 nav.sticky .nav-links li a:hover {
     color: var(--text-color-dark);
 }
+
 
 .cover {
     position: relative;
