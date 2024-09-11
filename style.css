@@ -17,6 +17,9 @@
     min-height: 100vh;
     width: 100%;
 }
+#discentes{
+    background-color:#FD9800 ;
+}
 .container-discentes{
 	margin: 4rem 30px;
 	max-width: 1536px;
@@ -24,39 +27,45 @@
 	align-items: center;
 	flex-direction: column;
 	gap: 2rem;
+   
 }
 
 .area_container {
 	display: flex;
 	align-items: center;
-	flex-direction: row;
+	flex-direction: row;/*mudado para row*/
     justify-content: space-between;
 	gap: 1rem;
+    flex-wrap: wrap;/*quebrar quando a tela diminuir*/
 }
 
 .profiles_container {
 	display: flex;
-	flex-wrap: wrap;
+    /*retirei o wrap daqui*/
 	align-items: center;
 	justify-content: center;
-	gap: 16px;
+	/*retirei o gap daqui*/
+    background-color: rgb(244, 244, 242);
+    box-shadow: 6px 1px 10px 0px hsla(30, 93%, 50%, 0.418);
+    border-radius: 10px;
 }
 
 .profile_container {
 	align-items: center;
 	width: calc(192px + 3rem);
 	display: flex;
-	flex-direction: column;
-	gap: 8px;
-	padding: 16px;
-	border: solid 1px #dbdee3;
-	border-radius: 16px;
+	flex-direction: row;
+	padding: 16px ;
+	border: solid ;
+	border-radius: 10px;
 	text-align: center;
+    gap: 8px;
 }
 .profile_image{
-    width: 80px;
-    height: 100px;
-    margin-bottom: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    margin-bottom: 10px;/*mudei de 40 pra 10*/
 }
 #pinturas{
     background-color: #FD9800;
